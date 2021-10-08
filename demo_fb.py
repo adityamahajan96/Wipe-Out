@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-from __future__ import print_function
+
+#from __future__ import print_function
 from selenium import webdriver
 from bs4 import BeautifulSoup
-from argparse import ArgumentParser
+#from argparse import ArgumentParser
 from time import sleep
 import getpass
 import sys
@@ -15,8 +16,7 @@ driver = webdriver.Firefox()
 # password_element.send_keys("Welcome@123")
 # password_element.submit()
 #soup = BeautifulSoup(driver.page_source)
-#profile_link = soup.find('a', {'title': 'Profile'})
-#profile_name = profile_link.get('href')[25:]
+
 profile_name = "100073511051181"
 user = "fakeerfaltu@gmail.com"
 pswd = "Welcome@123"
