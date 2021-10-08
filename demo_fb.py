@@ -64,6 +64,15 @@ for i in range(2):
 #sleep(5)
 
 
+
+#action option common div:
 #bp9cbjyn j83agx80 btwxx1t3 buofh1pr i1fnvgqd hpfvmrgz
-#bp9cbjyn j83agx80 btwxx1t3 buofh1pr i1fnvgqd hpfvmrgz
-#bp9cbjyn j83agx80 btwxx1t3 buofh1pr i1fnvgqd hpfvmrgz
+
+#delete span:
+#d2edcug0 hpfvmrgz qv66sw1b c1et5uql b0tq1wua a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d9wwppkn fe6kdd0r mau55g9w c8b282yb hrzyx87i jq4qci2q a3bd9o3v ekzkrbhg oo9gr5id hzawbc8m
+
+#unlike span:
+#d2edcug0 hpfvmrgz qv66sw1b c1et5uql b0tq1wua a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d9wwppkn fe6kdd0r mau55g9w c8b282yb hrzyx87i jq4qci2q a3bd9o3v ekzkrbhg oo9gr5id hzawbc8m
+
+#recycle_bin div:
+#oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 opuu4ng7 oygrvhab kj2yoqh6 cxgpxx05 dflh9lhu sj5x9vvc scb9dxdr i1ao9s8h esuyzwwr f1sip0of lzcic4wl n00je7tq arfg74bv qs9ysxi8 k77z8yql l9j0dhe7 abiwlrkh p8dawk7l bp9cbjyn dwo3fsh8 btwxx1t3 pfnyh3mw du4w35lb
