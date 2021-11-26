@@ -1,5 +1,14 @@
-# Wipe Out: A Social Media Data Eraser
+# WipeOut: A Social Media Data Eraser Tool
 
-- Install **geckodriver** and other required packages for **Selenium Webdriver & BeautifulSoup**.
-- Add the **geckodriver** absolute path in **$PATH**. 
-- Command to run: **python3 demo_fb.py**
+## WipeOut for Facebook
+
+### Geckodriver for Firefox:
+- Install **geckodriver** and other required packages for **Selenium Webdriver**.
+- Add the relative path of **geckodriver** w.r.t. the *fb_eraser.py* script on the line `driver = webdriver.Firefox(executable_path = 'geckodriver_relative_path/geckodriver.exe')` inside the script. 
+
+### XAMPP Server Installation and Configuration:
+- Install the latest version of **XAMPP Server** on your PC.
+- By default, XAMPP server doesn't support *Python scripts*. So, we need to configure the `Apache httpd.conf` configuration file. 
+- Go to the end of the configuration file and add these two lines:
+	- `AddHandler cgi-script .py`
+	- `ScriptInterpreterSource Registry-Strict`
