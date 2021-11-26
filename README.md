@@ -17,6 +17,6 @@
 ### Running the application:
 - Clone this repository inside the following path:
 	- `C:/.../xampp/htdocs/`
-- Start XAMPP. Run the *Apache Server* by clicking on `Run`. Make sure the Apache icon turns Green.
+- Start XAMPP. Run the *Apache Server* by clicking on `Run`. Wait for a few seconds for the Apache icon to turn Green.
 - Now open a new tab on your Firefox browser and type `localhost/Wipeout/`.
 - Finally, get started with the application.
