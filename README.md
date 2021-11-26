@@ -1,6 +1,6 @@
 # WipeOut: A Social Media Data Eraser Tool
 
-## WipeOut for Facebook
+## 1. WipeOut for Facebook
 
 ### Geckodriver for Firefox:
 - Install **geckodriver** and other required packages for **Selenium Webdriver** in Python.
@@ -13,3 +13,10 @@
 - Go to the end of the configuration file and add these two lines:
 	- `AddHandler cgi-script .py`
 	- `ScriptInterpreterSource Registry-Strict`
+	
+### Running the application:
+- Clone this repository inside the following path:
+	- `C:/.../xampp/htdocs/`
+- Start XAMPP. Run the *Apache Server* by clicking on `Run`. Make sure the Apache icon turns Green.
+- Now open a new tab on your Firefox browser and type `localhost/Wipeout/`.
+- Finally, get started with the application.
