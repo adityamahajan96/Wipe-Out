@@ -3,7 +3,7 @@
 ## WipeOut for Facebook
 
 ### Geckodriver for Firefox:
-- Install **geckodriver** and other required packages for **Selenium Webdriver**.
+- Install **geckodriver** and other required packages for **Selenium Webdriver** in Python.
 - Add the relative path of **geckodriver** w.r.t. the *fb_eraser.py* script on the following line inside the script: 
 	- `driver = webdriver.Firefox(executable_path = 'geckodriver_relative_path/geckodriver.exe')`
 
