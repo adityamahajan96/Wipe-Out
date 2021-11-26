@@ -60,16 +60,17 @@ try:
     sleep(3)
     print('<html>')
     print('<head><meta name="viewport" content="width=device-width, initial-scale=1">')
-    print('<link rel="stylesheet" href="style.css"></head>')
+    print('<link rel="stylesheet" href="css/style.css"></head>')
     print('<body>')
     print('<div class="log">')
-    print('<div class="imgcontainer" id="img_con"><img src="wipeout_logo.jpeg" alt="WipeOut" class="avatar" loading="lazy"></div>')
-    print('<div class="demo">Welcome User - ' + profile_name + '</div>')
+    print('<div class="imgcontainer" id="img_con"><img src="images/wipeout_logo.jpeg" alt="WipeOut" class="avatar" loading="lazy"></div>')
+    print('<div class="demo_login"><div class="print">LOGIN Successful...</div></div>')
     sys.stdout.flush()
-    print('<div class="demo">Login Successful...</div>')
+    sleep(1)
+    print('<div class="demo_welcome"><div class="print_welcome">Welcome User - <b>' + profile_name + '</b></div></div>')
     sys.stdout.flush()
 except:
-    print('<div class="demo">INVALID Username / Password !!</div>')
+    print('<div class="demo_error"><div class="print">INVALID Username / Password !! Exitting...</div></div>')
     sys.stdout.flush()
     sys.exit("Exitting !!")
     driver.close()
@@ -78,10 +79,10 @@ try:
     act_log = 'https://www.facebook.com/' + profile_name + '/allactivity?privacy_source=activity_log&log_filter=cluster_11'
     driver.get(act_log)
     sleep(2)
-    print('<div class="demo">User: {' + profile_name + '} Activity log opened..</div>')
+    print('<div class="demo"><div class="print">User - <b>' + profile_name + '</b> Activity log opened..</div></div>')
     sys.stdout.flush()
 except:
-    print('<div class="demo">ERROR opening the Activity Log page...</div>')
+    print('<div class="demo_error"><div class="print">ERROR opening the Activity Log page. LOGGING OUT...</div></div>')
     driver.close()
 
 # delete = driver.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/span")
@@ -90,16 +91,26 @@ except:
 #action = soup.find('div', {'aria-label': 'Action options'})
 for i in range(n):
     try:
-        WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//div[@aria-label='Action options']"))).click()
+        WebDriverWait(driver, 8).until(EC.element_to_be_clickable((By.XPATH, "//div[@aria-label='Action options']"))).click()
         #driver.find_element_by_xpath("//div[@aria-label='Action options']").click()
-        sleep(2)
-        WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//div[@class='bp9cbjyn j83agx80 btwxx1t3 buofh1pr i1fnvgqd hpfvmrgz']"))).click()
-        sleep(2)
-        WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//div[@aria-label='Delete']"))).click()
-        print('<div class="demo">Activity-' + str(i + 1) + ' Deleted !!</div>')
-        sleep(1)
+        sleep(4)
+        WebDriverWait(driver, 8).until(EC.element_to_be_clickable((By.XPATH, "//div[@class='bp9cbjyn j83agx80 btwxx1t3 buofh1pr i1fnvgqd hpfvmrgz']"))).click()
+        sleep(4)
+        try:
+            WebDriverWait(driver, 8).until(EC.element_to_be_clickable((By.XPATH, "//div[@aria-label='Delete']"))).click()
+            print('<div class="demo"><div class="print">Activity-' + str(i + 1) + ' Deleted !!</div></div>')
+            sys.stdout.flush()
+            sleep(4)
+        except:
+            act_log = 'https://www.facebook.com/' + profile_name + '/allactivity?privacy_source=activity_log&log_filter=cluster_11'
+            print('<div class="demo"><div class="print">Activity-' + str(i + 1) + ' Deleted !!</div></div>')
+            driver.get(act_log)
+            sleep(4)
+            continue
     except:
-        print('<div class="demo">TIMEOUT EXCEPTION !! Please check your Internet Connection...\n</div>')
+        print('<div class="demo_error"><div class="print">TIMEOUT !! Please check your Internet Connection. LOGGING OUT...\n</div></div>')
         driver.close()
-print('</body></html>')
+print('<div class="demo_welcome"><div class="print_welcome">User - <b>' + profile_name + '</b> LOGGING OUT...</div></div>')
+print('<div class="redirect"><a href="#" onclick="javascript:window.history.back(-1);return false;">Go Back to Login Page</a></div>')
+print('</div></body></html>')
 driver.close()
